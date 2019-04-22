@@ -1,0 +1,8 @@
+{
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "prettier.tslintIntegration": true,
+  "tslint.autoFixOnSave": false,
+  "cSpell.words": ["primeng"]
+}
