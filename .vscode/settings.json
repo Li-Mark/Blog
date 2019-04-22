@@ -4,5 +4,12 @@
   "files.autoSaveDelay": 1000,
   "prettier.tslintIntegration": true,
   "tslint.autoFixOnSave": false,
-  "cSpell.words": ["primeng"]
+  "cSpell.words": [
+    "classlist",
+    "codelyzer",
+    "devkit",
+    "jasminewd",
+    "primeng",
+    "tslib"
+  ]
 }
