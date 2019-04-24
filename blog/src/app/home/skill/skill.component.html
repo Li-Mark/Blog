@@ -1,1 +1,9 @@
-<mat-progress-bar mode="determinate" value="40"></mat-progress-bar>
+<div class="title">Skills</div>
+<div class="skill" *ngFor="let skill of skills">
+  <span class="name"> {{ skill.name }} ({{ skill.value / 10 }} / 10) </span>
+  <mat-progress-bar
+    mode="determinate"
+    [value]="skill.value"
+    [color]="skill.color"
+  ></mat-progress-bar>
+</div>

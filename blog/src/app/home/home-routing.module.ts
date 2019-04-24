@@ -9,7 +9,7 @@ const routes: Routes = [
     component: HomeComponent,
     children: [
       { path: "skill", component: SkillComponent },
-      { path: "", component: SkillComponent, pathMatch: "full" }
+      { path: "", redirectTo: "/skill", pathMatch: "full" }
     ]
   }
 ];
