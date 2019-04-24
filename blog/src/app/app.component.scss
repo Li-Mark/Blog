@@ -1,9 +1,47 @@
 .navigator {
   display: flex;
-}
-
-.tail {
-  justify-content: center;
   align-items: center;
-  align-content: center;
+  flex: 1;
+
+  & a {
+    display: flex;
+    width: 24px;
+    height: 24px;
+  }
+
+  & .head {
+    display: flex;
+  }
+
+  & .tail {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+
+    & .link {
+      justify-content: center;
+      margin: 0 6px;
+    }
+
+    & .weixin {
+      cursor: pointer;
+      position: relative;
+
+      & .weixin-qc-code {
+        position: absolute;
+        display: none;
+      }
+
+      &:hover {
+        & .weixin-qc-code {
+          position: absolute;
+          right: 0;
+          top: 40px;
+          height: 120px;
+          width: 120px;
+          display: block;
+        }
+      }
+    }
+  }
 }
