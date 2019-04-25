@@ -1,0 +1,31 @@
+:host {
+  display: flex;
+  flex: 1;
+
+  .profile-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    & .row {
+      align-items: center;
+      display: flex;
+      margin: 10px 0;
+    }
+
+    & .name {
+      font-family: 20px;
+      font-weight: 500;
+    }
+  }
+
+  mat-icon {
+    height: 20px;
+    margin-right: 10px;
+    width: 16px;
+  }
+
+  .skill-wrapper {
+    display: flex;
+    flex-grow: 1;
+  }
+}

@@ -1,56 +1,47 @@
-<mat-toolbar>
+<mat-toolbar color="primary">
   <div class="navigator">
     <div class="head">
-      <div class="link">
-        <a href="/" class="home">
-          <mat-icon color="primary">home</mat-icon>
-        </a>
-      </div>
+      <a href="/">
+        <mat-icon>home</mat-icon>
+      </a>
       <button mat-button>Resume</button>
-
-      <button mat-button>Blog</button>
-
-      <button mat-button>Trip</button>
-
-      <button mat-button>Resource</button>
+      <button mat-button>Blogs</button>
+      <button mat-button>Resources</button>
+      <button mat-button>About</button>
     </div>
     <div class="tail">
       <div class="link">
         <a
           href="https://www.linkedin.com/in/%E4%BA%91%E9%BE%99-%E6%9D%8E-865244aa/?locale=en_US"
         >
-          <img class="image" src="../assets/linkedin.ico" alt="LinkedIn" />
+          <mat-icon svgIcon="linkedin" matTooltip="LinkedIn"></mat-icon>
         </a>
       </div>
-      <div class="link">
-        <a href="https://github.com/Li-Mark">
-          <img class="image" src="../assets/github.ico" alt="GitHub" />
-        </a>
-      </div>
-      <div class="link">
-        <a href="https://home.cnblogs.com/u/limark/">
-          <img class="image" src="../assets/blog.ico" alt="Blog" />
-        </a>
-      </div>
+      <a href="https://github.com/Li-Mark">
+        <mat-icon svgIcon="github" matTooltip="GitHub"></mat-icon>
+      </a>
+      <a href="https://www.cnblogs.com/limark/">
+        <mat-icon svgIcon="blog" matTooltip="Blog"></mat-icon>
+      </a>
 
-      <div class="link">
-        <a href="https://twitter.com/mark74639081">
-          <img class="image" src="../assets/twitter.ico" alt="Twitter" />
-        </a>
-      </div>
+      <a href="https://twitter.com/mark74639081">
+        <mat-icon svgIcon="twitter" matTooltip="Twitter"></mat-icon>
+      </a>
 
-      <div class="link">
-        <a
-          href="https://www.weibo.com/1686339884/profile?rightmod=1&wvr=6&mod=personinfo"
-        >
-          <img class="image" src="../assets/weibo.ico" alt="Weibo" />
-        </a>
-      </div>
-      <div class="weixin">
-        <img class="image" src="../assets/weixin.ico" alt="Weibo" />
-        <img class="weixin-qc-code" src="../assets/weixin.jpg" alt="Weixin" />
-      </div>
+      <a href="https://weibo.com/911120110">
+        <mat-icon svgIcon="weibo" matTooltip="Weibo"></mat-icon>
+      </a>
+      <a class="wechat">
+        <mat-icon svgIcon="wechat" matTooltip="WeChat"></mat-icon>
+        <img
+          class="wechat-qc-code"
+          src="../assets/wechat-qc.jpg"
+          alt="We Chart QC Code"
+        />
+      </a>
     </div>
   </div>
 </mat-toolbar>
-<router-outlet></router-outlet>
+<div class="content">
+  <router-outlet></router-outlet>
+</div>

@@ -1,48 +1,61 @@
+$icon-color: #fff;
+
 .navigator {
-  display: flex;
   align-items: center;
+  display: flex;
   flex: 1;
+
+  mat-icon {
+    color: $icon-color;
+    height: 24px;
+    width: 24px;
+  }
 
   & a {
     display: flex;
-    width: 24px;
     height: 24px;
+    justify-content: center;
+    margin: 0 6px;
+    text-decoration: none;
+    width: 24px;
   }
 
   & .head {
+    align-items: center;
     display: flex;
   }
 
   & .tail {
+    align-items: center;
     display: flex;
-    justify-content: flex-end;
     flex: 1;
+    justify-content: flex-end;
 
-    & .link {
-      justify-content: center;
-      margin: 0 6px;
-    }
-
-    & .weixin {
+    & .wechat {
       cursor: pointer;
+      height: 24px;
       position: relative;
 
-      & .weixin-qc-code {
-        position: absolute;
+      & .wechat-qc-code {
         display: none;
+        position: absolute;
       }
 
       &:hover {
-        & .weixin-qc-code {
+        & .wechat-qc-code {
+          display: block;
+          height: 120px;
           position: absolute;
           right: 0;
-          top: 40px;
-          height: 120px;
+          top: 60px;
           width: 120px;
-          display: block;
           z-index: 99999999;
         }
       }
     }
   }
+}
+
+.content {
+  padding: 20px;
 }
