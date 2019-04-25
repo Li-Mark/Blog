@@ -16,7 +16,11 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "publish": "docker build -t blog:prod .",
+    "docker:ps": "docker ps -a -q",
+    "docker:stop": "docker stop $(docker ps -a -q)",
+    "docker:rm": "docker rm $(docker ps -a -q)",
+    "docker:build": "docker build -t blog .",
+    "docker:run": "npm run docker:build && docker run -p 8080:80 blog",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
