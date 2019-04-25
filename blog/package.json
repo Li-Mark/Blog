@@ -16,6 +16,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "publish": "docker build -t blog:prod .",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
