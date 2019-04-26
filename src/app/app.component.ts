@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { MatSelectChange } from "@angular/material/select";
 
 @Component({
   selector: "app-root",
@@ -6,5 +7,14 @@ import { Component } from "@angular/core";
   styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
-  constructor() {}
+  public selectedLanguage = "english";
+  private localeKey = "yunlong-blog-locale";
+  constructor() {
+    this.selectedLanguage = localStorage.getItem(this.localeKey);
+  }
+
+  onLanguageChange(change: MatSelectChange) {
+    localStorage.setItem(this.localeKey, change.value);
+    window.location.reload();
+  }
 }

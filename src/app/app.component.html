@@ -55,6 +55,16 @@
           alt="We Chart QC Code"
         />
       </a>
+      <mat-form-field class="language">
+        <mat-select
+          matNativeControl
+          [value]="selectedLanguage"
+          (selectionChange)="onLanguageChange($event)"
+        >
+          <mat-option value="english">ENG</mat-option>
+          <mat-option value="chinese">中文</mat-option>
+        </mat-select>
+      </mat-form-field>
     </div>
   </div>
 </mat-toolbar>
