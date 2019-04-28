@@ -4,19 +4,17 @@
       <mat-icon class="menu">toc</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item i18n="mobile-navigator | profile">
-        Profile
+      <button mat-menu-item i18n="mobile-navigator | Profile">
+        简历
       </button>
-      <button mat-menu-item i18n="mobile-navigator | Blogs">
-        Blogs
+      <button mat-menu-item i18n="mobile-navigator | Articles">
+        文章
       </button>
-
       <button mat-menu-item i18n="mobile-navigator | Resources">
-        Resources
+        资源
       </button>
-
       <button mat-menu-item i18n="mobile-navigator | About">
-        About
+        关于
       </button>
 
       <a
@@ -50,19 +48,5 @@
         alt="We Chart QC Code"
       />
     </mat-menu>
-  </div>
-  <div class="tail">
-    <div class="link">
-      <mat-form-field class="language">
-        <mat-select
-          matNativeControl
-          [value]="selectedLanguage"
-          (selectionChange)="onLanguageChange($event)"
-        >
-          <mat-option value="english">ENG</mat-option>
-          <mat-option value="chinese">中文</mat-option>
-        </mat-select>
-      </mat-form-field>
-    </div>
   </div>
 </div>

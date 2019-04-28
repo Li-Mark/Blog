@@ -1,16 +1,15 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { MobileNavigatorComponent } from './mobile-navigator.component';
+import { MobileNavigatorComponent } from "./mobile-navigator.component";
 
-describe('MobileNavigatorComponent', () => {
+describe("MobileNavigatorComponent", () => {
   let component: MobileNavigatorComponent;
   let fixture: ComponentFixture<MobileNavigatorComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MobileNavigatorComponent ]
-    })
-    .compileComponents();
+      declarations: [MobileNavigatorComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +18,7 @@ describe('MobileNavigatorComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });

@@ -54,15 +54,6 @@
                   "maximumError": "5mb"
                 }
               ]
-            },
-            "zh-cn": {
-              "aot": true,
-              "outputPath": "dist/blog/",
-              "baseHref": "/zh-cn/",
-              "i18nFile": "src/assets/locale/messages.zh-cn.xlf",
-              "i18nFormat": "xlf",
-              "i18nLocale": "zh-cn",
-              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -74,9 +65,6 @@
           "configurations": {
             "production": {
               "browserTarget": "blog:build:production"
-            },
-            "zh-cn": {
-              "browserTarget": "blog:build:zh-cn"
             }
           }
         },

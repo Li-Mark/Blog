@@ -9,12 +9,6 @@ import { MatTooltipModule } from "@angular/material/tooltip";
 @NgModule({
   declarations: [BrowserNavigatorComponent],
   exports: [BrowserNavigatorComponent],
-  imports: [
-    CommonModule,
-    MatButtonModule,
-    MatIconModule,
-    MatSelectModule,
-    MatTooltipModule
-  ]
+  imports: [CommonModule, MatButtonModule, MatIconModule, MatTooltipModule]
 })
 export class BrowserNavigatorModule {}
