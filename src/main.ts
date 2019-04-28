@@ -19,9 +19,9 @@ declare const require;
 const locale = window.localStorage.getItem("yunlong-blog-locale");
 let translations;
 if (locale && locale === "chinese") {
-  translations = require(`raw-loader!./locale/messages.zh-cn.xlf`);
+  translations = require(`raw-loader!./assets/locale/messages.zh-cn.xlf`);
 } else {
-  translations = require(`raw-loader!./locale/messages.en-us.xlf`);
+  translations = require(`raw-loader!./assets/locale/messages.en-us.xlf`);
 }
 platformBrowserDynamic()
   .bootstrapModule(AppModule, {

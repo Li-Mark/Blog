@@ -1,0 +1,70 @@
+$icon-color: #fff;
+
+:host {
+  align-items: center;
+  display: flex;
+  flex: 1;
+
+  .navigator {
+    align-items: center;
+    display: flex;
+    flex: 1;
+
+    mat-icon {
+      color: $icon-color;
+      height: 24px;
+      width: 24px;
+    }
+
+    & a {
+      color: $icon-color;
+      display: flex;
+      height: 24px;
+      justify-content: center;
+      margin: 0 6px;
+      text-decoration: none;
+      width: 24px;
+    }
+
+    & .head {
+      align-items: center;
+      display: flex;
+    }
+
+    & .tail {
+      align-items: center;
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+
+      & .wechat {
+        cursor: pointer;
+        height: 24px;
+        position: relative;
+
+        & .wechat-qc-code {
+          display: none;
+          position: absolute;
+        }
+
+        &:hover {
+          & .wechat-qc-code {
+            display: block;
+            height: 120px;
+            position: absolute;
+            right: 0;
+            top: 60px;
+            width: 120px;
+            z-index: 99999999;
+          }
+        }
+      }
+
+      & .language {
+        font-size: 14px;
+        margin-left: 0 6px;
+        width: 50px;
+      }
+    }
+  }
+}

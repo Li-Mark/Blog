@@ -1,0 +1,68 @@
+<div class="navigator">
+  <div class="head">
+    <button mat-button [matMenuTriggerFor]="menu">
+      <mat-icon class="menu">toc</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item i18n="mobile-navigator | profile">
+        Profile
+      </button>
+      <button mat-menu-item i18n="mobile-navigator | Blogs">
+        Blogs
+      </button>
+
+      <button mat-menu-item i18n="mobile-navigator | Resources">
+        Resources
+      </button>
+
+      <button mat-menu-item i18n="mobile-navigator | About">
+        About
+      </button>
+
+      <a
+        href="https://www.linkedin.com/in/%E4%BA%91%E9%BE%99-%E6%9D%8E-865244aa/?locale=en_US"
+      >
+        <mat-icon color="primary" svgIcon="linkedin"></mat-icon>
+      </a>
+      <a href="https://github.com/Li-Mark">
+        <mat-icon color="primary" color="primary" svgIcon="github"></mat-icon>
+      </a>
+      <a href="https://www.cnblogs.com/limark/">
+        <mat-icon svgIcon="blog"></mat-icon>
+      </a>
+
+      <a href="https://twitter.com/mark74639081">
+        <mat-icon
+          color="primary"
+          svgIcon="twitter"
+          i18n-matTooltip
+          matTooltip="Twitter"
+        ></mat-icon>
+      </a>
+
+      <a href="https://weibo.com/911120110">
+        <mat-icon color="primary" svgIcon="weibo"></mat-icon>
+      </a>
+
+      <img
+        class="wechat-qc-code"
+        src="../assets/wechat-qc.jpg"
+        alt="We Chart QC Code"
+      />
+    </mat-menu>
+  </div>
+  <div class="tail">
+    <div class="link">
+      <mat-form-field class="language">
+        <mat-select
+          matNativeControl
+          [value]="selectedLanguage"
+          (selectionChange)="onLanguageChange($event)"
+        >
+          <mat-option value="english">ENG</mat-option>
+          <mat-option value="chinese">中文</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+</div>

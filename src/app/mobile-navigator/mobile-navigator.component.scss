@@ -1,0 +1,72 @@
+$icon-color: #000;
+$menu-color: #fff;
+
+:host {
+  align-items: center;
+  display: flex;
+  flex: 1;
+}
+
+.navigator {
+  align-items: center;
+  display: flex;
+  flex: 1;
+
+  .menu {
+    color: $menu-color;
+  }
+
+  mat-icon {
+    height: 24px;
+    width: 24px;
+  }
+
+  & a {
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    margin: 0 6px;
+    text-decoration: none;
+    width: 24px;
+  }
+
+  & .head {
+    align-items: center;
+    display: flex;
+  }
+
+  & .wechat {
+    cursor: pointer;
+    height: 24px;
+    position: relative;
+  }
+
+  & .tail {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+
+    & .language {
+      font-size: 14px;
+      margin-left: 0 6px;
+      width: 50px;
+    }
+  }
+}
+
+a {
+  color: $icon-color;
+  margin: 10px;
+}
+
+.wechat-qc-code {
+  display: block;
+  height: 120px;
+  margin: 14px;
+  width: 120px;
+}
+
+button {
+  font-weight: 600;
+}
