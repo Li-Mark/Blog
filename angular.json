@@ -57,9 +57,9 @@
             },
             "zh-cn": {
               "aot": true,
-              "outputPath": "dist/blog-zh-cn/",
+              "outputPath": "dist/blog/",
               "baseHref": "/zh-cn/",
-              "i18nFile": "src/locale/messages.zh-cn.xlf",
+              "i18nFile": "src/assets/locale/messages.zh-cn.xlf",
               "i18nFormat": "xlf",
               "i18nLocale": "zh-cn",
               "i18nMissingTranslation": "error"
