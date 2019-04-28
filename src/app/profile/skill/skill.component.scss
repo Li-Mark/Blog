@@ -1,8 +1,9 @@
 :host {
-  min-width: 200px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+  align-items: stretch;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  width: 100%;
 
   .title {
     font-size: 24px;
@@ -15,6 +16,6 @@
   }
 
   .skill {
-    margin: 28px 14px;
+    margin: 14px;
   }
 }
