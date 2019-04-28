@@ -10,11 +10,13 @@ export class AppComponent {
   public selectedLanguage = "english";
   private localeKey = "yunlong-blog-locale";
   constructor() {
-    this.selectedLanguage = localStorage.getItem(this.localeKey);
+    const language = localStorage.getItem(this.localeKey);
+    this.selectedLanguage = language ? language : this.selectedLanguage;
   }
 
   onLanguageChange(change: MatSelectChange) {
-    localStorage.setItem(this.localeKey, change.value);
+    this.selectedLanguage = change.value;
+    localStorage.setItem(this.localeKey, this.selectedLanguage);
     window.location.reload();
   }
 }
