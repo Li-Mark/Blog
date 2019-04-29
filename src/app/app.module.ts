@@ -10,6 +10,7 @@ import { ProfileModule } from "./profile/profile.module";
 import { HttpClientModule } from "@angular/common/http";
 import { BrowserNavigatorModule } from "./browser-navigator/browser-navigator.module";
 import { MobileNavigatorModule } from "./mobile-navigator/mobile-navigator.module";
+import { MarkdownModule } from "ngx-markdown";
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,6 +22,7 @@ import { MobileNavigatorModule } from "./mobile-navigator/mobile-navigator.modul
     HttpClientModule,
     MobileNavigatorModule,
     MatToolbarModule,
+    MarkdownModule.forRoot(),
     ProfileModule
   ],
   providers: [],
