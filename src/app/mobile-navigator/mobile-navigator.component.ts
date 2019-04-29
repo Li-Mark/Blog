@@ -1,4 +1,5 @@
 import { Component, ChangeDetectionStrategy } from "@angular/core";
+import { GoogleAnalyticsService } from "../google.service";
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -7,5 +8,12 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
   styleUrls: ["./mobile-navigator.component.scss"]
 })
 export class MobileNavigatorComponent {
-  constructor() {}
+  constructor(private google: GoogleAnalyticsService) {
+    this.google.event(
+      "performance",
+      "initial page",
+      "mobile",
+      performance.now()
+    );
+  }
 }
