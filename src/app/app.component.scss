@@ -1,23 +1,28 @@
-@media all and (min-width: 800px) {
-  .browser-navigator {
+:host {
+  @media all and (min-width: 800px) {
+    .browser-navigator {
+      display: flex;
+    }
+
+    .mobile-navigator {
+      display: none;
+    }
+  }
+
+  @media all and (max-width: 799px) {
+    .browser-navigator {
+      display: none;
+    }
+
+    .mobile-navigator {
+      display: flex;
+    }
+  }
+
+  .content {
+    align-items: center;
     display: flex;
+    justify-content: center;
+    padding: 20px;
   }
-
-  .mobile-navigator {
-    display: none;
-  }
-}
-
-@media all and (max-width: 799px) {
-  .browser-navigator {
-    display: none;
-  }
-
-  .mobile-navigator {
-    display: flex;
-  }
-}
-
-.content {
-  padding: 20px;
 }
