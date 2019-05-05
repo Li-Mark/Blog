@@ -1,11 +1,13 @@
 :host {
-  display: flex;
-  flex: 1;
+  display: grid;
+  grid-template-columns: 300px auto;
+
   word-wrap: break-word;
 
   .profile-wrapper {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
 
     & .row {
       align-items: center;
@@ -26,7 +28,14 @@
   }
 
   .skill-wrapper {
-    display: flex;
-    flex-grow: 1;
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .resume {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
   }
 }
