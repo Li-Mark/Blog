@@ -39,7 +39,8 @@
 - 根据项目的功能实现编写单元测试以及端对端测试
 - 在项目开发过程中，进行文档的编写以及维护
 - 实际参与产品的前端页面编写以及后台服务的维护工作，涉及到的业务模块有前端页面逻辑，后端REST API等
-### 主要技术: 
+
+主要技术: 
 [Angular](https://angular.io/),
 [Kendo UI for Angular](https://www.telerik.com/kendo-angular-ui), 
 [NodeJS](https://nodejs.org/en/), 
