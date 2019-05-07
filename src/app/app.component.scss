@@ -1,5 +1,5 @@
 :host {
-  @media all and (min-width: 800px) {
+  @media all and (min-width: 600px) {
     .browser-navigator {
       display: flex;
     }
@@ -9,7 +9,7 @@
     }
   }
 
-  @media all and (max-width: 799px) {
+  @media all and (max-width: 599px) {
     .browser-navigator {
       display: none;
     }
